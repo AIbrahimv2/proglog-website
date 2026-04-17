@@ -1,4 +1,6 @@
 /* ===== Reset & Base ===== */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700;800&display=swap');
+
 *, *::before, *::after {
   margin: 0;
   padding: 0;
@@ -97,9 +99,10 @@ img {
 }
 
 .logo-text {
+  font-family: 'Inter', var(--font);
   font-size: 1.25rem;
   font-weight: 800;
-  letter-spacing: -0.02em;
+  letter-spacing: -0.03em;
 }
 
 .nav-links {
