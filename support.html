@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Support – ProgLog</title>
+  <meta name="description" content="Get help with ProgLog. Browse FAQs or contact our support team.">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="container nav">
+      <a href="/" class="logo">
+        <img src="images/logo.svg" alt="ProgLog" class="logo-img">
+        <span class="logo-text">ProgLog</span>
+      </a>
+      <button class="nav-toggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="/">Home</a></li>
+        <li><a href="support.html" class="active">Support</a></li>
+        <li><a href="privacy.html">Privacy Policy</a></li>
+        <li><a href="terms.html">Terms of Use</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-header">
+      <div class="container">
+        <h1>Support</h1>
+        <p>We're here to help. Check the FAQs below or reach out directly.</p>
+      </div>
+    </section>
+
+    <section class="faq">
+      <div class="container container-narrow">
+        <h2>Frequently Asked Questions</h2>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span>How do I log a workout?</span>
+            <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="faq-answer">
+            <p>Tap the "+" button on the home screen, select an exercise (or create a custom one), then enter your sets, reps, and weight. Tap "Save" when you're done.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span>Can I create custom exercises?</span>
+            <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="faq-answer">
+            <p>Yes! When adding an exercise, tap "Create Custom Exercise" to define your own with a name, target muscle group, and equipment type.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span>How does progressive overload tracking work?</span>
+            <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="faq-answer">
+            <p>ProgLog automatically compares your current performance to your previous sessions. When you've consistently hit your rep targets, the app suggests increasing the weight for your next session.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span>Is my data backed up?</span>
+            <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="faq-answer">
+            <p>Your workout data is stored locally on your device. We recommend enabling iCloud backup on your device to ensure your data is safe.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span>Can I switch between kg and lbs?</span>
+            <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="faq-answer">
+            <p>Yes. Go to Settings and toggle between metric (kg) and imperial (lbs). All your existing data will be converted automatically.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span>How do I delete my data?</span>
+            <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="faq-answer">
+            <p>Go to Settings > Data Management > Delete All Data. This will permanently remove all workout history from the app. This action cannot be undone.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="container container-narrow">
+        <h2>Contact Us</h2>
+        <p>Couldn't find your answer above? Send us a message and we'll get back to you as soon as possible.</p>
+
+        <form class="contact-form" id="contact-form">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required placeholder="Your name">
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required placeholder="you@example.com">
+          </div>
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <select id="subject" name="subject" required>
+              <option value="" disabled selected>Select a topic</option>
+              <option value="bug">Bug Report</option>
+              <option value="feature">Feature Request</option>
+              <option value="account">Account / Data</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required placeholder="Describe your issue or question..."></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Send Message</button>
+          <p class="form-note">Or email us directly at <a href="mailto:support@proglog.dev">support@proglog.dev</a></p>
+        </form>
+
+        <div class="contact-success" id="contact-success" hidden>
+          <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+          <h3>Message Sent!</h3>
+          <p>Thanks for reaching out. We'll get back to you within 48 hours.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <span class="logo-text">ProgLog</span>
+        <p>&copy; 2025 ProgLog. All rights reserved.</p>
+      </div>
+      <ul class="footer-links">
+        <li><a href="support.html">Support</a></li>
+        <li><a href="privacy.html">Privacy Policy</a></li>
+        <li><a href="terms.html">Terms of Use</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
