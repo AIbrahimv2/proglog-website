@@ -38,17 +38,35 @@ document.querySelectorAll('.faq-question').forEach(button => {
   });
 });
 
-// Contact form
+// Contact form (submits via Formspree)
 const contactForm = document.getElementById('contact-form');
 const contactSuccess = document.getElementById('contact-success');
 
 if (contactForm) {
-  contactForm.addEventListener('submit', (e) => {
+  contactForm.addEventListener('submit', async (e) => {
     e.preventDefault();
 
-    // In a real app, you'd send this to a backend or email service.
-    // For now, show the success message.
-    contactForm.hidden = true;
-    contactSuccess.hidden = false;
+    const submitBtn = contactForm.querySelector('button[type="submit"]');
+    submitBtn.disabled = true;
+    submitBtn.textContent = 'Sending...';
+
+    try {
+      const response = await fetch(contactForm.action, {
+        method: 'POST',
+        body: new FormData(contactForm),
+        headers: { 'Accept': 'application/json' }
+      });
+
+      if (response.ok) {
+        contactForm.hidden = true;
+        contactSuccess.hidden = false;
+      } else {
+        throw new Error('Form submission failed');
+      }
+    } catch (error) {
+      submitBtn.disabled = false;
+      submitBtn.textContent = 'Send Message';
+      alert('Something went wrong. Please try emailing us directly at support@proglog.dev');
+    }
   });
 }
