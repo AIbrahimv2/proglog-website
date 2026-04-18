@@ -12,9 +12,9 @@
   --color-surface: #ffffff;
   --color-text: #1a1a2e;
   --color-text-secondary: #555;
-  --color-primary: #4f46e5;
-  --color-primary-hover: #4338ca;
-  --color-primary-light: #eef2ff;
+  --color-primary: #00bf63;
+  --color-primary-hover: #00a856;
+  --color-primary-light: #e6f9f0;
   --color-border: #e5e7eb;
   --color-accent: #10b981;
   --radius: 12px;
@@ -194,13 +194,13 @@ img {
 .btn-primary {
   background: var(--color-primary);
   color: #fff;
-  box-shadow: 0 2px 8px rgba(79, 70, 229, 0.3);
+  box-shadow: 0 2px 8px rgba(0, 191, 99, 0.3);
 }
 
 .btn-primary:hover {
   background: var(--color-primary-hover);
   color: #fff;
-  box-shadow: 0 4px 16px rgba(79, 70, 229, 0.35);
+  box-shadow: 0 4px 16px rgba(0, 191, 99, 0.35);
 }
 
 /* ===== Features ===== */
@@ -416,7 +416,7 @@ img {
 .form-group textarea:focus {
   outline: none;
   border-color: var(--color-primary);
-  box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.12);
+  box-shadow: 0 0 0 3px rgba(0, 191, 99, 0.15);
 }
 
 .form-group textarea {
