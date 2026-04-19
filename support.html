@@ -6,13 +6,14 @@
   <title>Support – ProgLog</title>
   <meta name="description" content="Get help with ProgLog. Browse FAQs or contact our support team.">
   <link rel="stylesheet" href="css/style.css">
-  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="images/ProgLog.png" type="image/png">
+  <link rel="apple-touch-icon" href="images/ProgLog.png">
 </head>
 <body>
   <header class="site-header">
     <nav class="container nav">
       <a href="/" class="logo">
-        <img src="images/logo.svg" alt="ProgLog" class="logo-img">
+        <img src="images/ProgLog.png" alt="ProgLog" class="logo-img">
         <span class="logo-text">ProgLog</span>
       </a>
       <button class="nav-toggle" aria-label="Toggle navigation">
@@ -130,6 +131,8 @@
             <label for="message">Message</label>
             <textarea id="message" name="message" rows="5" required placeholder="Describe your issue or question..."></textarea>
           </div>
+          <!-- Honeypot: hidden field to catch bots. Real users never see or fill this. -->
+          <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true" class="honeypot">
           <button type="submit" class="btn btn-primary">Send Message</button>
           <p class="form-note">Or email us directly at <a href="mailto:support@proglog.dev">support@proglog.dev</a></p>
         </form>
@@ -146,8 +149,11 @@
   <footer class="site-footer">
     <div class="container footer-inner">
       <div class="footer-brand">
-        <span class="logo-text">ProgLog</span>
-        <p>&copy; 2025 ProgLog. All rights reserved.</p>
+        <div class="footer-logo">
+          <img src="images/ProgLog.png" alt="ProgLog" class="logo-img">
+          <span class="logo-text">ProgLog</span>
+        </div>
+        <p>&copy; 2026 ProgLog. All rights reserved.</p>
       </div>
       <ul class="footer-links">
         <li><a href="articles.html">Articles</a></li>
