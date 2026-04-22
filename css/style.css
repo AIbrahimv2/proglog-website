@@ -68,7 +68,7 @@ img {
   background: var(--color-surface);
   border-bottom: 1px solid var(--color-border);
   position: sticky;
-  top: 0;
+  top: 40px;
   z-index: 100;
   backdrop-filter: blur(12px);
   background: rgba(255,255,255,0.92);
@@ -732,6 +732,9 @@ img {
   font-size: 0.9rem;
   font-weight: 500;
   line-height: 1.4;
+  position: sticky;
+  top: 0;
+  z-index: 101;
 }
 
 .launch-was {
@@ -974,6 +977,10 @@ img {
 }
 
 @media (max-width: 768px) {
+  .launch-strip-extra {
+    display: none;
+  }
+
   .nav-toggle {
     display: flex;
   }
