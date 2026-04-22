@@ -74,9 +74,8 @@ img {
     position: sticky;
     top: 0;
     z-index: 100;
-    backdrop-filter: blur(16px);
-    background: rgba(255, 255, 255, 0.8);
-    padding-top: env(safe-area-inset-top);
+    backdrop-filter: blur(12px);
+    background: rgba(255, 255, 255, 0.92);
 }
 
 .nav {
@@ -781,26 +780,24 @@ img {
 
 /* ===== Launch Strip ===== */
 .has-strip .site-header {
-    top: calc(40px + env(safe-area-inset-top));
-    padding-top: 0;
+    top: 40px;
 }
 
 .launch-strip {
     background: var(--color-primary);
     color: #fff;
     text-align: center;
-    padding: env(safe-area-inset-top) 24px 0;
+    padding: 0 24px;
     font-size: 0.9rem;
     font-weight: 500;
     line-height: 1.4;
     position: sticky;
     top: 0;
     z-index: 101;
-    height: calc(40px + env(safe-area-inset-top));
+    height: 40px;
     display: flex;
-    align-items: flex-end;
+    align-items: center;
     justify-content: center;
-    padding-bottom: 0;
     white-space: nowrap;
     overflow: hidden;
 }
