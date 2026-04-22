@@ -899,7 +899,7 @@ img {
   color: #fff;
 }
 
-.built-different > .container > p {
+.built-different > .container > p:not(.bd-note) {
   font-size: 1.05rem;
   color: rgba(255, 255, 255, 0.65);
   max-width: 520px;
