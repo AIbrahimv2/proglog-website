@@ -734,6 +734,18 @@ img {
   line-height: 1.4;
 }
 
+.launch-was {
+  opacity: 0.55;
+  text-decoration: line-through;
+  margin-right: 2px;
+}
+
+.launch-now {
+  font-weight: 800;
+  font-size: 1.1em;
+  margin-right: 2px;
+}
+
 .launch-strip-badge {
   display: inline-block;
   background: #fff;
