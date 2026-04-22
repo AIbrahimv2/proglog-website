@@ -1109,7 +1109,7 @@ img {
   }
 
   .manifesto-vs {
-    transform: rotate(90deg);
+    transform: none;
   }
 
   .bd-price-main {
