@@ -753,13 +753,19 @@ img {
   background: var(--color-primary);
   color: #fff;
   text-align: center;
-  padding: 10px 24px;
+  padding: 0 24px;
   font-size: 0.9rem;
   font-weight: 500;
   line-height: 1.4;
   position: sticky;
   top: 0;
   z-index: 101;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 .launch-was {
