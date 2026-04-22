@@ -746,6 +746,25 @@ img {
   margin-right: 2px;
 }
 
+.launch-strip-btn {
+  display: inline-block;
+  background: #fff;
+  color: var(--color-primary);
+  font-size: 0.8rem;
+  font-weight: 700;
+  padding: 4px 12px;
+  border-radius: 999px;
+  margin-left: 14px;
+  text-decoration: none;
+  transition: opacity var(--transition);
+  vertical-align: middle;
+}
+
+.launch-strip-btn:hover {
+  opacity: 0.85;
+  color: var(--color-primary);
+}
+
 .launch-strip-badge {
   display: inline-block;
   background: #fff;
