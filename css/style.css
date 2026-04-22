@@ -68,7 +68,7 @@ img {
   background: var(--color-surface);
   border-bottom: 1px solid var(--color-border);
   position: sticky;
-  top: 40px;
+  top: 0;
   z-index: 100;
   backdrop-filter: blur(12px);
   background: rgba(255,255,255,0.92);
@@ -749,6 +749,10 @@ img {
 }
 
 /* ===== Launch Strip ===== */
+.has-strip .site-header {
+  top: 40px;
+}
+
 .launch-strip {
   background: var(--color-primary);
   color: #fff;
