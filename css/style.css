@@ -872,84 +872,87 @@ img {
     text-align: center;
 }
 
-.manifesto-label {
-    font-size: 0.75rem;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 0.12em;
-    color: var(--color-primary);
-    margin-bottom: 24px;
+.manifesto-intro {
+    font-size: clamp(1rem, 2.2vw, 1.25rem);
+    color: rgba(255, 255, 255, 0.5);
+    margin-bottom: 44px;
+    font-style: italic;
 }
 
-.manifesto-quote {
-    font-size: clamp(1.25rem, 2.8vw, 1.7rem);
-    font-weight: 700;
-    line-height: 1.45;
-    letter-spacing: -0.02em;
-    max-width: 680px;
-    margin: 0 auto 20px;
-    color: #fff;
-    font-style: normal;
-}
-
-.manifesto-body {
-    font-size: 1.05rem;
-    color: rgba(255, 255, 255, 0.65);
-    margin-bottom: 52px;
-}
-
-.manifesto-verdict {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 28px;
-    flex-wrap: wrap;
-}
-
-.manifesto-them,
-.manifesto-us {
+.cost-vis {
+    max-width: 500px;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    gap: 6px;
-    padding: 28px 36px;
-    border-radius: var(--radius);
-    min-width: 180px;
+    gap: 36px;
+    text-align: left;
 }
 
-.manifesto-them {
-    background: rgba(255, 255, 255, 0.06);
-    border: 1px solid rgba(255, 255, 255, 0.12);
-}
-
-.manifesto-us {
-    background: var(--color-primary);
-}
-
-.manifesto-vs {
-    font-size: 1.1rem;
-    font-weight: 700;
-    color: rgba(255, 255, 255, 0.3);
-}
-
-.verdict-label {
-    font-size: 0.75rem;
+.cost-vis-label {
+    font-size: 0.7rem;
     font-weight: 700;
     text-transform: uppercase;
-    letter-spacing: 0.08em;
-    opacity: 0.75;
+    letter-spacing: 0.1em;
+    color: rgba(255, 255, 255, 0.35);
+    margin-bottom: 14px;
 }
 
-.verdict-price {
-    font-size: 2rem;
-    font-weight: 800;
-    letter-spacing: -0.04em;
-    line-height: 1;
+.cost-vis-group--us .cost-vis-label {
+    color: var(--color-primary);
 }
 
-.verdict-note {
-    font-size: 0.85rem;
-    opacity: 0.8;
+.cost-row {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 10px;
+}
+
+.cost-row:last-child {
+    margin-bottom: 0;
+}
+
+.cost-yr {
+    font-size: 0.72rem;
+    color: rgba(255, 255, 255, 0.35);
+    width: 46px;
+    flex-shrink: 0;
+    font-variant-numeric: tabular-nums;
+}
+
+.cost-track {
+    flex: 1;
+    height: 10px;
+    background: rgba(255, 255, 255, 0.07);
+    border-radius: 99px;
+    overflow: hidden;
+}
+
+.cost-fill {
+    height: 100%;
+    width: var(--pct);
+    background: rgba(255, 255, 255, 0.22);
+    border-radius: 99px;
+}
+
+.cost-fill--us {
+    background: var(--color-primary);
+    box-shadow: 0 0 10px var(--color-primary);
+}
+
+.cost-amt {
+    font-size: 0.82rem;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.55);
+    width: 38px;
+    text-align: right;
+    flex-shrink: 0;
+    font-variant-numeric: tabular-nums;
+}
+
+.cost-amt--us {
+    color: var(--color-primary);
+    font-weight: 700;
 }
 
 /* ===== Features additions ===== */
@@ -1093,14 +1096,8 @@ img {
         padding: 60px 0;
     }
 
-    .manifesto-verdict {
-        gap: 16px;
-    }
-
-    .manifesto-them,
-    .manifesto-us {
-        padding: 20px 28px;
-        min-width: 140px;
+    .cost-vis {
+        max-width: 420px;
     }
 
     .built-different {
@@ -1131,15 +1128,6 @@ img {
     .feature-card--hero {
         grid-column: span 1;
         padding: 28px 24px;
-    }
-
-    .manifesto-verdict {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .manifesto-vs {
-        transform: none;
     }
 
     .bd-price-main {
