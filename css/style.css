@@ -159,10 +159,10 @@ img {
 }
 
 .hero h1 {
-  font-size: clamp(2.2rem, 5vw, 3.5rem);
+  font-size: clamp(1.8rem, 4vw, 2.9rem);
   font-weight: 800;
   letter-spacing: -0.03em;
-  line-height: 1.15;
+  line-height: 1.2;
   margin-bottom: 20px;
 }
 
@@ -219,12 +219,12 @@ img {
   font-size: 2rem;
   font-weight: 800;
   letter-spacing: -0.02em;
-  margin-bottom: 48px;
+  margin-bottom: 12px;
 }
 
 .features-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  grid-template-columns: repeat(4, 1fr);
   gap: 24px;
 }
 
@@ -688,7 +688,225 @@ img {
   font-size: 0.95rem;
 }
 
+/* ===== Launch Strip ===== */
+.launch-strip {
+  background: var(--color-primary);
+  color: #fff;
+  text-align: center;
+  padding: 10px 24px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+.launch-strip-badge {
+  display: inline-block;
+  background: #fff;
+  color: var(--color-primary);
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  padding: 2px 8px;
+  border-radius: 4px;
+  margin-right: 8px;
+  vertical-align: middle;
+}
+
+/* ===== Hero additions ===== */
+.hero-eyebrow {
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--color-primary);
+  margin-bottom: 16px;
+}
+
+.hero-price-note {
+  margin-top: 16px;
+  font-size: 0.9rem;
+  color: var(--color-text-secondary);
+  font-weight: 500;
+}
+
+/* ===== Manifesto ===== */
+.manifesto {
+  background: var(--color-text);
+  color: #fff;
+  padding: 80px 0;
+  text-align: center;
+}
+
+.manifesto-label {
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--color-primary);
+  margin-bottom: 24px;
+}
+
+.manifesto-quote {
+  font-size: clamp(1.25rem, 2.8vw, 1.7rem);
+  font-weight: 700;
+  line-height: 1.45;
+  letter-spacing: -0.02em;
+  max-width: 680px;
+  margin: 0 auto 20px;
+  color: #fff;
+  font-style: normal;
+}
+
+.manifesto-body {
+  font-size: 1.05rem;
+  color: rgba(255, 255, 255, 0.65);
+  margin-bottom: 52px;
+}
+
+.manifesto-verdict {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 28px;
+  flex-wrap: wrap;
+}
+
+.manifesto-them,
+.manifesto-us {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  padding: 28px 36px;
+  border-radius: var(--radius);
+  min-width: 180px;
+}
+
+.manifesto-them {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.manifesto-us {
+  background: var(--color-primary);
+}
+
+.manifesto-vs {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.verdict-label {
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  opacity: 0.75;
+}
+
+.verdict-price {
+  font-size: 2rem;
+  font-weight: 800;
+  letter-spacing: -0.04em;
+  line-height: 1;
+}
+
+.verdict-note {
+  font-size: 0.85rem;
+  opacity: 0.8;
+}
+
+/* ===== Features additions ===== */
+.features-eyebrow {
+  text-align: center;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--color-primary);
+  margin-bottom: 8px;
+}
+
+.features-sub {
+  text-align: center;
+  color: var(--color-text-secondary);
+  font-size: 1.05rem;
+  max-width: 440px;
+  margin: 0 auto 48px;
+}
+
+/* ===== Built Different ===== */
+.built-different {
+  background: var(--color-text);
+  color: #fff;
+  padding: 100px 0;
+  text-align: center;
+}
+
+.bd-eyebrow {
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--color-primary);
+  margin-bottom: 20px;
+}
+
+.built-different h2 {
+  font-size: clamp(1.4rem, 3.2vw, 2rem);
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  line-height: 1.25;
+  max-width: 640px;
+  margin: 0 auto 20px;
+  color: #fff;
+}
+
+.built-different > .container > p {
+  font-size: 1.05rem;
+  color: rgba(255, 255, 255, 0.65);
+  max-width: 520px;
+  margin: 0 auto 44px;
+  line-height: 1.65;
+}
+
+.bd-price {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 32px;
+}
+
+.bd-price-main {
+  font-size: 3.5rem;
+  font-weight: 800;
+  color: var(--color-primary);
+  letter-spacing: -0.05em;
+  line-height: 1;
+}
+
+.bd-price-sub {
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.55);
+  font-weight: 500;
+}
+
+.bd-note {
+  margin-top: 16px;
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.35);
+}
+
 /* ===== Mobile ===== */
+@media (max-width: 900px) {
+  .features-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 @media (max-width: 768px) {
   .nav-toggle {
     display: flex;
@@ -721,15 +939,29 @@ img {
   }
 
   .hero h1 {
-    font-size: 2rem;
+    font-size: 1.75rem;
   }
 
   .features {
     padding: 50px 0;
   }
 
-  .features-grid {
-    grid-template-columns: 1fr;
+  .manifesto {
+    padding: 60px 0;
+  }
+
+  .manifesto-verdict {
+    gap: 16px;
+  }
+
+  .manifesto-them,
+  .manifesto-us {
+    padding: 20px 28px;
+    min-width: 140px;
+  }
+
+  .built-different {
+    padding: 70px 0;
   }
 
   .footer-inner {
@@ -745,5 +977,24 @@ img {
 
   .contact-form {
     padding: 24px 20px;
+  }
+}
+
+@media (max-width: 540px) {
+  .features-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .manifesto-verdict {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .manifesto-vs {
+    transform: rotate(90deg);
+  }
+
+  .bd-price-main {
+    font-size: 2.8rem;
   }
 }
