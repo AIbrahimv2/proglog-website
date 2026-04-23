@@ -261,7 +261,7 @@ img {
     font-size: 2rem;
     font-weight: 800;
     letter-spacing: -0.02em;
-    margin-bottom: 12px;
+    margin-bottom: 48px;
 }
 
 .features-grid {
@@ -868,16 +868,12 @@ img {
     text-align: center;
 }
 
-.manifesto > .container > p.bd-eyebrow {
-    color: rgba(255, 255, 255, 0.65);
-}
-
 .manifesto-quote {
-    font-size: clamp(1.25rem, 2.8vw, 1.7rem);
-    font-weight: 700;
-    line-height: 1.45;
-    letter-spacing: -0.02em;
-    max-width: 680px;
+    font-size: clamp(1.4rem, 3.2vw, 2rem);
+    font-weight: 800;
+    line-height: 1.25;
+    letter-spacing: -0.03em;
+    max-width: 640px;
     margin: 0 auto 20px;
     color: #fff;
 }
@@ -885,7 +881,9 @@ img {
 .manifesto-body {
     font-size: 1.05rem;
     color: rgba(255, 255, 255, 0.65);
-    margin-bottom: 52px;
+    max-width: 520px;
+    margin: 0 auto 44px;
+    line-height: 1.65;
 }
 
 .manifesto-verdict {
@@ -965,7 +963,7 @@ img {
 .built-different {
     background: var(--color-text);
     color: #fff;
-    padding: 100px 0;
+    padding: 80px 0;
     text-align: center;
 }
 
@@ -1094,7 +1092,7 @@ img {
     }
 
     .built-different {
-        padding: 70px 0;
+        padding: 60px 0;
     }
 
     .footer-inner {
