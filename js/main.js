@@ -1,3 +1,39 @@
+// Theme toggle (light/dark)
+(function setupThemeToggle() {
+  const STORAGE_KEY = 'theme';
+  const sunIcon = '<svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></svg>';
+  const moonIcon = '<svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>';
+
+  function getEffectiveTheme() {
+    const explicit = document.documentElement.getAttribute('data-theme');
+    if (explicit === 'dark' || explicit === 'light') return explicit;
+    return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+  }
+
+  document.querySelectorAll('.nav-right').forEach(navRight => {
+    if (navRight.querySelector('.theme-toggle')) return;
+
+    const button = document.createElement('button');
+    button.className = 'theme-toggle';
+    button.type = 'button';
+    button.setAttribute('aria-label', 'Toggle theme');
+    button.innerHTML = sunIcon + moonIcon;
+
+    const cta = navRight.querySelector('.nav-cta');
+    if (cta) {
+      navRight.insertBefore(button, cta);
+    } else {
+      navRight.prepend(button);
+    }
+
+    button.addEventListener('click', () => {
+      const next = getEffectiveTheme() === 'dark' ? 'light' : 'dark';
+      document.documentElement.setAttribute('data-theme', next);
+      localStorage.setItem(STORAGE_KEY, next);
+    });
+  });
+})();
+
 // Mobile nav toggle
 const navToggle = document.querySelector('.nav-toggle');
 const navLinks = document.querySelector('.nav-links');
