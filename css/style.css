@@ -1090,6 +1090,102 @@ img {
     font-size: 0.95rem;
 }
 
+/* ===== Waitlist form ===== */
+.waitlist-form {
+    gap: 8px;
+    max-width: 460px;
+    margin: 0 auto;
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius);
+    padding: 6px;
+    box-shadow: var(--shadow);
+}
+
+.waitlist-form:not([hidden]) {
+    display: flex;
+}
+
+.waitlist-input {
+    flex: 1;
+    min-width: 0;
+    padding: 10px 14px;
+    border: none;
+    background: transparent;
+    font: inherit;
+    font-size: 0.95rem;
+    color: var(--color-text);
+}
+
+.waitlist-input:focus {
+    outline: none;
+}
+
+.waitlist-input::placeholder {
+    color: var(--color-text-secondary);
+    opacity: 0.7;
+}
+
+.waitlist-btn {
+    padding: 10px 20px;
+    font-size: 0.95rem;
+    white-space: nowrap;
+    flex-shrink: 0;
+}
+
+.waitlist-error {
+    margin-top: 12px;
+    font-size: 0.875rem;
+    color: #c53030;
+    text-align: center;
+    max-width: 460px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.waitlist-success {
+    align-items: center;
+    gap: 10px;
+    padding: 14px 22px;
+    background: var(--color-primary-light);
+    color: var(--color-primary);
+    border-radius: var(--radius);
+    font-weight: 600;
+    font-size: 0.95rem;
+}
+
+.waitlist-success:not([hidden]) {
+    display: inline-flex;
+}
+
+.waitlist-success svg {
+    flex-shrink: 0;
+}
+
+/* Dark variant for built-different section */
+.waitlist-form--dark {
+    background: rgba(255, 255, 255, 0.06);
+    border-color: rgba(255, 255, 255, 0.12);
+    box-shadow: none;
+}
+
+.waitlist-form--dark .waitlist-input {
+    color: #fff;
+}
+
+.waitlist-form--dark .waitlist-input::placeholder {
+    color: rgba(255, 255, 255, 0.45);
+}
+
+.waitlist-error--dark {
+    color: #ff8a8a;
+}
+
+.waitlist-success--dark {
+    background: rgba(0, 191, 99, 0.15);
+    color: var(--color-primary);
+}
+
 /* ===== Mobile ===== */
 @media (max-width: 900px) {
     .features-grid {
@@ -1109,6 +1205,21 @@ img {
     .nav-cta {
         font-size: 0.8rem;
         padding: 7px 14px;
+    }
+
+    .waitlist-form {
+        flex-direction: column;
+        gap: 6px;
+        padding: 8px;
+    }
+
+    .waitlist-input {
+        text-align: center;
+        padding: 12px 14px;
+    }
+
+    .waitlist-btn {
+        width: 100%;
     }
 
     .nav-links {

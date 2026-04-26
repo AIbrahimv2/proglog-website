@@ -6,7 +6,7 @@
         <title>ProgLog: Your lifts. Forever.</title>
         <meta
             name="description"
-            content="No subscriptions. No bloat. Advanced stats, automatic PR tracking, Apple Health integration, and full offline access. Built by lifters, for lifters. $14.99 one-time."
+            content="Join the waitlist. The workout app that's not a subscription &mdash; coming soon. Advanced stats, automatic PR tracking, Apple Health integration, and full offline access. $14.99 one-time at launch."
         />
         <link rel="stylesheet" href="css/style.css" />
         <link rel="icon" href="images/ProgLog.png" type="image/png" />
@@ -41,7 +41,7 @@
                     <li><a href="support.html">Support</a></li>
                 </ul>
                 <div class="nav-right">
-                    <a href="#" class="nav-cta">Download</a>
+                    <a href="#waitlist" class="nav-cta">Join Waitlist</a>
                     <button class="nav-toggle" aria-label="Toggle navigation">
                         <span></span><span></span><span></span>
                     </button>
@@ -50,17 +50,34 @@
         </header>
 
         <main>
-            <section class="hero">
+            <section class="hero" id="waitlist">
                 <div class="container">
                     <h1>Your training data shouldn't <br />be held hostage.</h1>
-                    <p class="hero-sub">Built by lifters who got tired of renting the right to track their own workouts.</p>
-                    <div class="hero-actions">
-                        <a href="#" class="btn btn-primary"
-                            >Download on the App Store</a
-                        >
+                    <p class="hero-sub">We got tired of renting the right to track our own workouts. Launching soon.</p>
+                    <form
+                        class="waitlist-form"
+                        action="https://app.loops.so/api/newsletter-form/cmof2sius381u0i1472nnrqqq"
+                        method="POST"
+                    >
+                        <input
+                            type="email"
+                            name="email"
+                            class="waitlist-input"
+                            placeholder="you@example.com"
+                            aria-label="Email address"
+                            required
+                        />
+                        <button type="submit" class="btn btn-primary waitlist-btn">
+                            Join the waitlist
+                        </button>
+                    </form>
+                    <p class="waitlist-error" hidden></p>
+                    <div class="waitlist-success" hidden>
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                        <span>You're on the list. We'll email you the moment ProgLog ships.</span>
                     </div>
                     <p class="hero-price-note">
-                        No account required. Start logging for free.
+                        Zero spam. Just gains.
                     </p>
                 </div>
             </section>
@@ -68,7 +85,7 @@
             <section class="manifesto">
                 <div class="container">
                     <p class="bd-eyebrow">The Problem</p>
-                    <p class="manifesto-quote">Every workout app on the market wants a piece of your bank account every month &mdash; for the privilege of logging your own reps.</p>
+                    <p class="manifesto-quote">Every workout app wants a monthly fee. For the privilege of logging your own reps.</p>
                     <p class="manifesto-body">We think that&rsquo;s a trap, not a product.</p>
                     <div class="manifesto-verdict">
                         <div class="manifesto-them">
@@ -94,7 +111,7 @@
                 <div class="container">
                     <p class="features-eyebrow">Features</p>
                     <h2>Everything included. Nothing locked.</h2>
-                    <p class="features-sub">No tiers. No &ldquo;pro&rdquo; upsells. Every feature ships to every user.</p>
+                    <p class="features-sub">No tiers. No &ldquo;pro&rdquo; upsells. Every feature, every user.</p>
                     <div class="features-grid">
                         <div class="feature-card feature-card--hero">
                             <div class="feature-icon">
@@ -115,8 +132,7 @@
                             </div>
                             <h3>Advanced Stats &amp; Progress Charts</h3>
                             <p>
-                                Detailed charts across every lift. Track volume,
-                                strength, and personal records over time.
+                                Track volume, strength, and PRs across every lift.
                             </p>
                         </div>
 
@@ -146,8 +162,7 @@
                             </div>
                             <h3>Automatic PR Tracking</h3>
                             <p>
-                                Every personal record, detected automatically
-                                the moment you hit it. No manual flagging.
+                                Every PR detected the moment you hit it. No manual flagging.
                             </p>
                         </div>
 
@@ -195,8 +210,7 @@
                             </div>
                             <h3>Custom Programs</h3>
                             <p>
-                                Build and follow structured programs with
-                                progressive overload built in.
+                                Structured programs with progressive overload built in.
                             </p>
                         </div>
 
@@ -228,7 +242,7 @@
                                 </svg>
                             </div>
                             <h3>Full Offline Access</h3>
-                            <p>Works everywhere. No internet required, ever.</p>
+                            <p>No internet required. Ever.</p>
                         </div>
 
                         <div class="feature-card">
@@ -250,8 +264,7 @@
                             </div>
                             <h3>Plate Calculator</h3>
                             <p>
-                                Know exactly what to load on the bar before you
-                                even walk up to it.
+                                Know what to load before you walk up to the bar.
                             </p>
                         </div>
                     </div>
@@ -261,8 +274,8 @@
             <section class="promise">
                 <div class="container container-narrow">
                     <p class="bd-eyebrow">Our Promise</p>
-                    <blockquote class="promise-quote">&ldquo;We built ProgLog because we were tired of every app treating our training like a recurring revenue stream.&rdquo;</blockquote>
-                    <p class="promise-body">Every set, every rep, every working weight &mdash; we log it all in the same app we&rsquo;re selling to you. If something&rsquo;s missing, we add it. If something&rsquo;s slow, we fix it before our next session.</p>
+                    <blockquote class="promise-quote">&ldquo;We were tired of every app treating our training like a revenue stream.&rdquo;</blockquote>
+                    <p class="promise-body">Every set, every rep, logged in the same app we&rsquo;re selling you. If something&rsquo;s missing, we add it. If something&rsquo;s slow, we fix it before our next session.</p>
                     <div class="promise-list">
                         <div class="promise-item">
                             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
@@ -290,14 +303,35 @@
                 <div class="container">
                     <p class="bd-eyebrow">Built different</p>
                     <h2>No boardroom. No investors. No quarterly targets.</h2>
-                    <p>Just lifters who believed you deserved better than renting the right to log a workout.</p>
+                    <p>Just lifters tired of renting the right to log a workout.</p>
                     <div class="bd-price">
                         <span class="bd-price-main">$14.99</span>
                         <span class="bd-price-sub"
                             >Yours forever. No catches.</span
                         >
                     </div>
-                    <a href="#" class="btn btn-primary">Download ProgLog</a>
+                    <form
+                        class="waitlist-form waitlist-form--dark"
+                        action="https://app.loops.so/api/newsletter-form/cmof2sius381u0i1472nnrqqq"
+                        method="POST"
+                    >
+                        <input
+                            type="email"
+                            name="email"
+                            class="waitlist-input"
+                            placeholder="you@example.com"
+                            aria-label="Email address"
+                            required
+                        />
+                        <button type="submit" class="btn btn-primary waitlist-btn">
+                            Get notified at launch
+                        </button>
+                    </form>
+                    <p class="waitlist-error waitlist-error--dark" hidden></p>
+                    <div class="waitlist-success waitlist-success--dark" hidden>
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                        <span>You're on the list. We'll email you the moment ProgLog ships.</span>
+                    </div>
                     <p class="bd-note">Launch special. Normally $29.99.</p>
                 </div>
             </section>
